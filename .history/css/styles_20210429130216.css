@@ -484,8 +484,8 @@ button:focus {
   border-radius: 50%;
 }
 
-.social-icon-link.team__icon svg {
-  fill: var(--social-color);
+.social-icon-link.team__icon {
+  background: var(--content-color);
 }
 
 .social-icon-link.team__icon:hover svg,
@@ -495,6 +495,10 @@ button:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social-icon-link.team__icon svg {
+  fill: var(--social-color);
+}
+
 .social-icon-link:hover,
 .social-icon-link:focus {
   background-color: var(--accent-color);
@@ -502,39 +506,44 @@ button:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* .social-icon-link.team__icon:hover .icon,
+.social-icon-link.team__icon:focus .icon {
+  fill: var(--content-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+ */
 /* ------постоянные клиенты-------- */
 
-.clients {
-  padding: 94px 0;
+.cl {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.clients__list .client__logo {
+.cl-item .cl-logo {
   fill: var(--social-color);
 }
 
-.clients__list {
+.cl-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
 }
 
-.social-icons .client__logo {
+.social-icons .cl-logo {
   fill: var(--social-color);
 }
 
-.client__link:hover .client__logo,
-.client__link:focus .client__logo {
+.cl-link:hover .cl-logo,
+.cl-link:focus .cl-logo {
   fill: var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__item:not(:last-child) {
+.item-cl:not(:last-child) {
   margin-right: 30px;
 }
 
-.client__link {
+.cl-link {
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -545,11 +554,17 @@ button:focus {
   border-radius: 4px;
 }
 
-.client__link:hover,
-.client__link:focus {
+.cl-link:hover,
+.cl-link:focus {
   border: 1px solid var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cl-link .navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 /* -------------ХЕДЕР-------------- */
@@ -766,12 +781,6 @@ button:focus {
 
 .social-icon-link.footer__icon {
   background: rgba(255, 255, 255, 0.1);
-}
-.social-icon-link.footer__icon:hover,
-.social-icon-link.footer__icon:focus {
-  background: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------МОДАЛЬНОЕ ОКНО------- */

@@ -132,10 +132,10 @@ li {
   height: 120px;
 }
 
-.feature__icon svg {
+/* .feature__icon svg {
   width: 70px;
   height: 70px;
-}
+} */
 
 .feature:not(:last-child) {
   margin-right: 30px;

@@ -525,6 +525,7 @@ button:focus {
 
 .client__link:hover .client__logo,
 .client__link:focus .client__logo {
+  border: 1px solid var(--accent-color);
   fill: var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -545,12 +546,13 @@ button:focus {
   border-radius: 4px;
 }
 
-.client__link:hover,
-.client__link:focus {
-  border: 1px solid var(--accent-color);
+/* .client__link.client__logo:hover,
+.client__link.client__logo:focus {
+  fill: var(--accent-color);
+ 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* -------------ХЕДЕР-------------- */
 

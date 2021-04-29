@@ -508,7 +508,7 @@ button:focus {
   padding: 94px 0;
 }
 
-.clients__list .client__logo {
+.cl-item .cl-logo {
   fill: var(--social-color);
 }
 
@@ -516,25 +516,26 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
   list-style: none;
 }
 
-.social-icons .client__logo {
+.social-icons .cl-logo {
   fill: var(--social-color);
 }
 
-.client__link:hover .client__logo,
-.client__link:focus .client__logo {
+.cl-link:hover .cl-logo,
+.cl-link:focus .cl-logo {
   fill: var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__item:not(:last-child) {
+.item-cl:not(:last-child) {
   margin-right: 30px;
 }
 
-.client__link {
+.cl-link {
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -545,11 +546,17 @@ button:focus {
   border-radius: 4px;
 }
 
-.client__link:hover,
-.client__link:focus {
+.cl-link:hover,
+.cl-link:focus {
   border: 1px solid var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cl-link .navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 /* -------------ХЕДЕР-------------- */

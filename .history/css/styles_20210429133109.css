@@ -523,12 +523,12 @@ button:focus {
   fill: var(--social-color);
 }
 
-.client__link:hover .client__logo,
+/* .client__link:hover .client__logo,
 .client__link:focus .client__logo {
   fill: var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .clients__item:not(:last-child) {
   margin-right: 30px;
@@ -545,8 +545,9 @@ button:focus {
   border-radius: 4px;
 }
 
-.client__link:hover,
-.client__link:focus {
+.client__link.client__logo:hover,
+.client__link.client__logo:focus {
+  fill: var(--accent-color);
   border: 1px solid var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
